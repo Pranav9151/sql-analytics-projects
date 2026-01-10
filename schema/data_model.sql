@@ -1,0 +1,1 @@
+-- Data model for bank marketing analytics
