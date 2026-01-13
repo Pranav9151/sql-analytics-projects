@@ -37,3 +37,33 @@ GROUP BY age_group
 ORDER BY conversion_rate DESC;
 
 
+-- ======================================
+-- 2. Conversion Rate by Job Type
+-- ======================================
+
+WITH customer_responses AS (
+    SELECT
+        c.customer_id,
+        c.age,
+        c.job,
+        c.balance,
+        r.response
+    FROM customers c
+    JOIN responses r
+        ON c.customer_id = r.customer_id
+)
+
+SELECT
+    job,
+    COUNT(*) AS total_customers,
+    COUNT(CASE WHEN response = 'yes' THEN 1 END) AS total_converted,
+    ROUND(
+        COUNT(CASE WHEN response = 'yes' THEN 1 END) * 100.0 / COUNT(*),
+        2
+    ) AS conversion_rate
+FROM customer_responses
+GROUP BY job
+ORDER BY conversion_rate DESC;
+
+
+
