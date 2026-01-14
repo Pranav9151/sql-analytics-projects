@@ -101,3 +101,6 @@ SELECT
 FROM customer_responses
 GROUP BY balance_segment
 ORDER BY conversion_rate DESC;
+
+
+
