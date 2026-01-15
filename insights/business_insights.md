@@ -65,10 +65,23 @@ This helps marketing teams understand if current campaigns are effective or need
 
 ---
 
+## Day 4 – Campaign ROI Analysis
+
+Campaigns with higher conversion rates do not always generate the highest ROI.
+Some campaigns produce fewer conversions but are significantly more cost-efficient,
+leading to higher overall profitability.
+
+Campaigns ranked highest by ROI should be prioritized for scaling,
+while low-ROI campaigns should be reviewed or discontinued to optimize marketing spend.
+
+---
+
+
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
 - Day 2: Segmentation identifies which customers to target.  
-- Day 3: Campaign ranking shows which marketing strategies are most effective.  
+- Day 3: Campaign ranking shows which marketing strategies are most effective. 
+- Day 4: Campaign ROI and cost-based performance analysis.
 
 This structured analysis helps the bank **make data-driven decisions**, improve campaign efficiency, and increase conversion rates.
 
