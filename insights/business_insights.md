@@ -76,6 +76,18 @@ while low-ROI campaigns should be reviewed or discontinued to optimize marketing
 
 ---
 
+## Day 5 – High-Value Customer Targeting
+
+Customer segments with higher balances and specific job and education combinations
+show significantly higher conversion rates.
+
+Targeting these high-performing segments can improve campaign efficiency,
+increase conversion rates, and reduce customer acquisition costs.
+
+This segmentation can serve as a foundation for predictive modeling
+and advanced customer scoring in future campaigns.
+
+---
 
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
