@@ -89,11 +89,26 @@ and advanced customer scoring in future campaigns.
 
 ---
 
+## Day 6 – Funnel Analysis
+
+Funnel analysis reveals significant drop-offs between customer contact and response stages
+for several campaigns.
+
+Optimizing messaging and contact strategies can improve response rates,
+while offer personalization can improve final conversion rates.
+
+Campaigns with high response but low conversion should focus on offer quality,
+whereas campaigns with low response require better targeting or messaging.
+
+---
+
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
 - Day 2: Segmentation identifies which customers to target.  
 - Day 3: Campaign ranking shows which marketing strategies are most effective. 
 - Day 4: Campaign ROI and cost-based performance analysis.
+- Day 5: High-Value Customer Targeting
+- Day 6: Funnel Analysis
 
 This structured analysis helps the bank **make data-driven decisions**, improve campaign efficiency, and increase conversion rates.
 
