@@ -102,6 +102,19 @@ whereas campaigns with low response require better targeting or messaging.
 
 ---
 
+## Day 7 – Cohort Analysis
+
+Cohort analysis shows that customers acquired in certain months
+exhibit consistently higher conversion rates across subsequent campaigns.
+
+Newer cohorts demonstrate improved performance,
+indicating enhancements in targeting and campaign strategy over time.
+
+Cohort-based tracking enables long-term performance monitoring
+and supports strategic marketing planning.
+
+---
+
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
 - Day 2: Segmentation identifies which customers to target.  
