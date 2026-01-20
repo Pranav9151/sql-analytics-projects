@@ -109,6 +109,7 @@ whereas campaigns with low response require better targeting or messaging.
 - Day 4: Campaign ROI and cost-based performance analysis.
 - Day 5: High-Value Customer Targeting
 - Day 6: Funnel Analysis
+- Day 7: Cohort_analysis
 
 This structured analysis helps the bank **make data-driven decisions**, improve campaign efficiency, and increase conversion rates.
 
