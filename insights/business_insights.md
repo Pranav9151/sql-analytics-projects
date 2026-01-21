@@ -123,6 +123,7 @@ and supports strategic marketing planning.
 - Day 5: High-Value Customer Targeting
 - Day 6: Funnel Analysis
 - Day 7: Cohort_analysis
+- Day 8: 
 
 This structured analysis helps the bank **make data-driven decisions**, improve campaign efficiency, and increase conversion rates.
 
