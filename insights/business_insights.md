@@ -115,6 +115,19 @@ and supports strategic marketing planning.
 
 ---
 
+## Day 8 – Customer Lifetime Value (LTV)
+
+Customer Lifetime Value analysis reveals that a small segment of customers
+contributes disproportionately to overall revenue.
+
+Identifying high-LTV customers enables focused retention strategies,
+personalized offers, and improved long-term profitability.
+
+LTV-based prioritization supports more efficient allocation
+of marketing and relationship management resources.
+
+---
+
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
 - Day 2: Segmentation identifies which customers to target.  
@@ -123,7 +136,7 @@ and supports strategic marketing planning.
 - Day 5: High-Value Customer Targeting
 - Day 6: Funnel Analysis
 - Day 7: Cohort_analysis
-- Day 8: 
+- Day 8: Customer Lifetime Value (LTV)
 
 This structured analysis helps the bank **make data-driven decisions**, improve campaign efficiency, and increase conversion rates.
 
