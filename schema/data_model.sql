@@ -24,3 +24,5 @@ CREATE TABLE responses (
     campaign_id INT,
     response TEXT
 );
+
+

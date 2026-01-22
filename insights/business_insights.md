@@ -128,6 +128,20 @@ of marketing and relationship management resources.
 
 ---
 
+## Day 9 – SQL Performance Optimization & Query Tuning
+
+Indexing frequently used join and filter columns significantly improves
+query execution performance in PostgreSQL.
+
+Refactored queries using PostgreSQL-specific features such as FILTER
+reduce computation overhead and improve readability.
+
+Performance optimization ensures analytical queries scale efficiently
+as data volume increases, supporting enterprise-grade analytics workloads.
+
+---
+
+
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
 - Day 2: Segmentation identifies which customers to target.  
@@ -137,6 +151,8 @@ of marketing and relationship management resources.
 - Day 6: Funnel Analysis
 - Day 7: Cohort_analysis
 - Day 8: Customer Lifetime Value (LTV)
+- Day 9 – SQL Performance Optimization
+
 
 This structured analysis helps the bank **make data-driven decisions**, improve campaign efficiency, and increase conversion rates.
 
