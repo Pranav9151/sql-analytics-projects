@@ -141,6 +141,19 @@ as data volume increases, supporting enterprise-grade analytics workloads.
 
 ---
 
+## Day 10 – Executive KPI Framework
+
+The executive KPI framework consolidates key marketing performance metrics
+into a single, leadership-ready view.
+
+Tracking overall conversion rates, top-performing campaigns,
+and high-value customer segments enables fast, data-driven decisions.
+
+This framework supports strategic planning, budget allocation,
+and performance monitoring at an executive level.
+
+---
+
 
 **Summary:**  
 - Day 1: Overall conversion gives a baseline.  
