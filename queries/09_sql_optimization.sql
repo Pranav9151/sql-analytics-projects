@@ -1,39 +1,37 @@
--- ======================================
--- Day 9: SQL Performance Optimization
--- PostgreSQL Compatible
--- ======================================
+RUN EVERY STEP SEPERATELY 
 
--- 1️⃣ Create indexes on frequently joined and filtered columns
--- These indexes dramatically improve query performance
+1️⃣ CREATE INDEXES (RUN ONCE)
 
-
+-- Index on customer primary key
 CREATE INDEX IF NOT EXISTS idx_customers_customer_id
 ON customers (customer_id);
 
+-- Index on responses customer reference
 CREATE INDEX IF NOT EXISTS idx_responses_customer_id
 ON responses (customer_id);
 
+-- Index on responses campaign reference
 CREATE INDEX IF NOT EXISTS idx_responses_campaign_id
 ON responses (campaign_id);
 
+-- Index on campaigns primary key
 CREATE INDEX IF NOT EXISTS idx_campaigns_campaign_id
 ON campaigns (campaign_id);
 
+-- Index on response outcome (yes / no)
 CREATE INDEX IF NOT EXISTS idx_responses_response
 ON responses (response);
+------------------------------------
 
--- --------------------------------------
-
--- 2️⃣ Optimized conversion analysis query
--- Uses indexed columns and avoids unnecessary calculations
+2️⃣ OPTIMIZED CAMPAIGN CONVERSION QUERY
 
 SELECT
     ca.campaign_id,
     COUNT(r.customer_id) AS total_customers,
-    COUNT(*) FILTER (WHERE r.response = 'yes') AS total_conversions,
+    SUM(CASE WHEN r.response = 'yes' THEN 1 ELSE 0 END) AS total_conversions,
     ROUND(
-        COUNT(*) FILTER (WHERE r.response = 'yes') * 100.0
-        / COUNT(r.customer_id),
+        SUM(CASE WHEN r.response = 'yes' THEN 1 ELSE 0 END) * 100.0
+        / NULLIF(COUNT(r.customer_id), 0),
         2
     ) AS conversion_rate
 FROM campaigns ca
@@ -42,31 +40,27 @@ JOIN responses r
 GROUP BY ca.campaign_id
 ORDER BY conversion_rate DESC;
 
--- --------------------------------------
 
--- 3️⃣ Optimized high-value customer query
--- Avoids nested subqueries, uses GROUP BY efficiently
+3️⃣ HIGH-VALUE CUSTOMER IDENTIFICATION
 
 SELECT
     c.customer_id,
     c.job,
-    COUNT(*) FILTER (WHERE r.response = 'yes') AS conversions
+    SUM(CASE WHEN r.response = 'yes' THEN 1 ELSE 0 END) AS conversions
 FROM customers c
 JOIN responses r
     ON c.customer_id = r.customer_id
 GROUP BY c.customer_id, c.job
-HAVING COUNT(*) FILTER (WHERE r.response = 'yes') > 0
+HAVING SUM(CASE WHEN r.response = 'yes' THEN 1 ELSE 0 END) > 0
 ORDER BY conversions DESC;
 
--- --------------------------------------
 
--- 4️⃣ Analyze query performance (optional but recommended)
--- Run this separately in SQLTools if needed
+4️⃣ QUERY PERFORMANCE INSPECTION
 
 EXPLAIN ANALYZE
 SELECT
     ca.campaign_id,
-    COUNT(*) FILTER (WHERE r.response = 'yes') AS conversions
+    COUNT(*) AS total_responses
 FROM campaigns ca
 JOIN responses r
     ON ca.campaign_id = r.campaign_id
