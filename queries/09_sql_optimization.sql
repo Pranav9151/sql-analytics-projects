@@ -1,4 +1,4 @@
-RUN EVERY STEP SEPERATELY 
+-------------------------------- RUN EVERY STEP SEPERATELY ------------------------
 
 1️⃣ CREATE INDEXES (RUN ONCE)
 
